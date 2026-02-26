@@ -6,8 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT - Help Desk</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        #app-container { width: 100%; height: 100vh; }
+        iframe { border: none; width: 100%; height: 100%; }
+    </style>
 </head>
-<body>
-    <iframe style="width: 100%; height: 100vh;" scrolling="yes" src="https://script.google.com/macros/s/AKfycbx6VTbUuK_Y2qCIAgKqFSn0k8ziKGQOzT0aAv1pwVjpmO9qvlT0coiaRpDJSAMz1Bct5g/exec" frameborder="0"></iframe>
+<body oncontextmenu="return false;"> <div id="app-container"></div>
+
+    <script>
+        (function() {
+            var encryptedUrl = "aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J4NlZUYlV1S19ZMnFDSUFnS3FGU24wazh6aUtHUU96VDBhQXYxcHdWanBtTzlxdmxUMGNvaWFScERKU0FNejFCY3Q1Zy9leGVj";
+            var container = document.getElementById('app-container');
+            var iframe = document.createElement('iframe');
+            iframe.src = atob(encryptedUrl);
+            iframe.frameBorder = "0";
+            container.appendChild(iframe);
+        })();
+    </script>
+
 </body>
 </html>
