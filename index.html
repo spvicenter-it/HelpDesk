@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <base target="_top">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT - Help Desk</title>
-    <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-        #app-container { width: 100%; height: 100vh; }
-        iframe { border: none; width: 100%; height: 100%; }
-    </style>
+    <title>HelpDesk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body oncontextmenu="return false;"> <div id="app-container"></div>
+<body class="bg-slate-100 min-h-screen flex items-center justify-center p-4" oncontextmenu="return false;">
 
-    <script>
-        (function() {
-            var encryptedUrl = "aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J3OFZsMGZQLXo5Qlp3XzFnZUVHa2tBTkpYemxBUXF3b1Q2NndKQ3Fta25wWlNaSjRNUDJMZGQ3ZFNqakhrUW5xbkcvZXhlYw==";
-            var container = document.getElementById('app-container');
-            var iframe = document.createElement('iframe');
-            iframe.src = atob(encryptedUrl);
-            iframe.frameBorder = "0";
-            container.appendChild(iframe);
-        })();
-    </script>
-
+    <div class="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 text-center">
+        <div class="mb-8">
+            <div class="text-6xl mb-4">🛠️</div>
+            <h1 class="text-2xl font-bold text-slate-800 mb-2">HelpDesk</h1>
+            <p class="text-slate-500 text-sm">เพื่อความเสถียรของระบบและการแสดงผลที่สมบูรณ์ กรุณากดปุ่มด้านล่างเพื่อเปิดระบบในหน้าต่างใหม่</p>
+        </div>
+        
+        <a href="https://script.google.com/macros/s/AKfycbw8Vl0fP-z9BZw_1geEGkkANJXzlAQqwoT66wJCqmknpZSZJ4MP2Ldd7dSjjHkQnqnG/exec" target="_blank" rel="noopener noreferrer" 
+           class="block w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition-all transform hover:scale-[1.02]">
+            คลิกเพื่อเข้าสู่ระบบ
+        </a>
+    </div>
 </body>
 </html>
